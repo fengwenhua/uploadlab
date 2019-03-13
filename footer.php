@@ -1,6 +1,6 @@
 </div>
 		<div id="footer">
-			<center>Copyright&nbsp;@&nbsp;<span id="copyright_time"></span>&nbsp;by&nbsp;<a href="http://www.fengwenhua.top" target="_bank">Locus</a></center>
+			<center>Copyright&nbsp;@&nbsp;<span id="copyright_time"></span>&nbsp;by&nbsp;<a target="_bank">冯文华，吴媚敏，雷家丰</a></center>
 		</div>
 		<div class="mask"></div>
 		<div class="dialog">
