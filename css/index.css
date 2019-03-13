@@ -1,0 +1,79 @@
+﻿/*logo*/
+#head img{
+	margin-top: 10px;
+	height: 55px;
+}
+
+/*显示源码，查看提示，清空上传，注意在主页不要显示*/
+#head_menu{
+	min-width: 250px;
+	margin: 20px 40px 10px 10px;
+	float: right;
+}
+
+/*显示源码，查看提示，清空上传的样式；-webkit-border-radius：圆角；text-decoration：取消下划线*/
+#head_menu a{
+	background: #F19149;
+	margin: 10px 10px 10px 10px;
+	padding: 8px;
+	-webkit-border-radius:5px;
+	font-family:  黑体;
+	color: #333333;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+body{
+
+}
+
+
+/*下面是左边关卡选择*/
+#menu{
+	float: left;
+	width: 10%;
+	padding: 10 10 10 10;
+	min-width: 100px;
+	margin-left: 40px;
+}
+
+#menu ul li{
+	list-style-type:none;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#menu ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	padding: 5 30 5 30;
+}
+
+/*鼠标移动变色*/
+#menu ul li a:hover{
+	color: #E05D04;
+	background: #F19149;
+	-webkit-border-radius:5px;
+}
+
+
+/*下面是提示对话框*/
+.dialog {
+	min-height:120px;
+	background:#393D48;
+	color:#fff;display:none;
+	position:fixed; top:20%;
+	left:50%; 
+	z-index:100; 
+	box-shadow:3px 3px 5px #000;
+	-webkit-border-radius: 5px;
+}
+
+/*选中的关卡高亮*/
+.a_is_selected{
+	color: #E05D04;
+	background: #F19149;
+	-webkit-border-radius:5px;
+	padding: 5 30 5 30;
+}
