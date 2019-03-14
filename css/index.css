@@ -74,14 +74,21 @@ body{
 .tree li {position: relative;list-style: none;}
 /*一级菜单加下边线*/
 .tree>li{border-bottom: 1px solid #d9d9d9;}
+
 /*给有子菜单的菜单项添加背景图标*/
 .tree li label {max-width:999px;cursor: pointer;display: block;margin:0 0 0 -50px;padding: 15px 10px 15px 70px;background: url(../../img/arrow-down-o.png) no-repeat right center;background-position:95% 50%;white-space:nowrap;overflow:hidden;text-overflow: ellipsis; }
 .tree li label:hover,li label:focus{background-color:#a7a7a7;color:#fff;}
 /*清除所有展开的子菜单的display*/
 .tree li input + ol{display: none;}
 /*当input被选中时，给所有展开的子菜单设置样式*/
-.tree input:checked + ol {padding-left:14px;height: auto;display: block;}
-.tree input:checked + ol > li { height: auto;}
+.tree input:checked + ol {
+	padding-left:14px;
+	height: auto;
+	display: block;
+}
+.tree input:checked + ol > li {
+	height: auto;
+}
 /*末层菜单为A标签，设置样式*/
 .tree li.file a{margin:0 -10px 0 -50px;padding: 15px 20px 15px 70px;text-decoration:none;display: block;color:#333333;white-space:nowrap;overflow:hidden;text-overflow: ellipsis;}
 .tree li.file a:hover,li.file a:focus{background-color:#a7a7a7;color:#fff;}
@@ -100,12 +107,4 @@ body{
 	z-index:100; 
 	box-shadow:3px 3px 5px #000;
 	-webkit-border-radius: 5px;
-}
-
-/*选中的关卡高亮*/
-.a_is_selected{
-	color: #E05D04;
-	background: #1F85DE;
-	-webkit-border-radius:5px;
-	padding: 5 30 5 30;
 }
