@@ -38,7 +38,7 @@
 <!-- 下面是第二种实现方式 -->
 
 
-<ol class="tree">
+<!-- <ol class="tree">
        <li>
            <label for="folder1" class="folderOne">SQL注入</label> <input type="checkbox" id="folder1" />
            <ol>
@@ -94,3 +94,50 @@
            </ol>
        </li>
    </ol>
+ -->
+
+ <!-- 下面是第三种实现方式 -->
+ 	<ul id="accordion" class="accordion">
+		<li>
+			<div class="link"><i class="fa fa-paint-brush"></i>sql注入<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a href="#">Photoshop</a></li>
+				<li><a href="#">HTML</a></li>
+				<li><a href="#">CSS</a></li>
+				<li><a href="#">Maquetacion web</a></li>
+			</ul>
+		</li>
+		<li>
+			<div class="link"><i class="fa fa-code"></i>文件上传<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileupload/Pass-01/index.php">第一关</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileupload/Pass-02/index.php">第二关</a></li>
+				<li><a href="#">第三关</a></li>
+			</ul>
+		</li>
+		<li>
+			<div class="link"><i class="fa fa-mobile"></i>文件包含<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a href="#">Tablets</a></li>
+				<li><a href="#">Dispositivos mobiles</a></li>
+				<li><a href="#">Medios de escritorio</a></li>
+				<li><a href="#">Otros dispositivos</a></li>
+			</ul>
+		</li>
+		<li><div class="link"><i class="fa fa-globe"></i>XSS<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a href="#">Google</a></li>
+				<li><a href="#">Bing</a></li>
+				<li><a href="#">Yahoo</a></li>
+				<li><a href="#">Otros buscadores</a></li>
+			</ul>
+		</li>
+		<li><div class="link"><i class="fa fa-globe"></i>CSRF<i class="fa fa-chevron-down"></i></div>
+			<ul class="submenu">
+				<li><a href="#">Google</a></li>
+				<li><a href="#">Bing</a></li>
+				<li><a href="#">Yahoo</a></li>
+				<li><a href="#">Otros buscadores</a></li>
+			</ul>
+		</li>	
+	</ul>

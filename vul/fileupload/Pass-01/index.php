@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
 </div>
 
 <?php
-include '../footer.php'
+include '../../../footer.php'
 ?>
 
 
