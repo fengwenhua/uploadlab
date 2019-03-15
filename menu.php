@@ -115,6 +115,10 @@
 				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileupload/Pass-02/index.php">第二关</a></li>
 				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileupload/Pass-03/index.php">第三关</a></li>
 				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileupload/Pass-04/index.php">第四关</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileupload/Pass-05/index.php">第五关</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileupload/Pass-06/index.php">第六关</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileupload/Pass-07/index.php">第七关</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileupload/Pass-08/index.php">第八关</a></li>
 			</ul>
 		</li>
 		<li>
