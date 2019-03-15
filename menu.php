@@ -97,6 +97,7 @@
  -->
 
  <!-- 下面是第三种实现方式 -->
+ <div id="menu">
  	<ul id="accordion" class="accordion">
 		<li>
 			<div class="link"><i class="fa fa-paint-brush"></i>sql注入<i class="fa fa-chevron-down"></i></div>
@@ -141,3 +142,4 @@
 			</ul>
 		</li>	
 	</ul>
+</div>
