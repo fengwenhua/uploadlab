@@ -179,8 +179,9 @@ p code {
 }
 
 .dialog a.close { 
+	color:FFFFFF;
 	position:absolute; top:0; 
-	right:0; 
+	right:10; 
 	z-index:101;
 }
 
