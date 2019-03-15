@@ -113,7 +113,7 @@
 			<ul class="submenu">
 				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileupload/Pass-01/index.php">第一关</a></li>
 				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileupload/Pass-02/index.php">第二关</a></li>
-				<li><a href="#">第三关</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileupload/Pass-03/index.php">第三关</a></li>
 			</ul>
 		</li>
 		<li>
