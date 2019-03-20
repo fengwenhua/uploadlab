@@ -11,4 +11,11 @@ define("APP_URL_ROOT",str_replace(WWW_ROOT,"",APP_ROOT));
 define("INC_VUL_PATH",APP_URL_ROOT . "/include.php");
 //设置上传目录
 define("UPLOAD_PATH", "../vul/fileupload/upload");
+
+// 在这里填入mysql的用户名和密码
+$dbuser ='root';
+$dbpass ='mysqlroot';
+$dbname ="security";
+$host = 'localhost';
+$dbname1 = "flag";
 ?>

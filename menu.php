@@ -102,8 +102,8 @@
 		<li>
 			<div class="link"><i class="fa fa-paint-brush"></i>sql注入<i class="fa fa-chevron-down"></i></div>
 			<ul class="submenu">
-				<li><a href="#">Photoshop</a></li>
-				<li><a href="#">HTML</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/sqli/Less-1/index.php">第一关</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/sqli/Less-2/index.php">第二关</a></li>
 				<li><a href="#">CSS</a></li>
 				<li><a href="#">Maquetacion web</a></li>
 			</ul>
