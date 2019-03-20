@@ -14,7 +14,7 @@ include 'menu.php';
     <ol>
         <li>
             <h3>简介</h3>
-            <p><code>uploadlab</code>是一个使用<code>php</code>语言编写的,专门收集渗透测试和CTF中遇到的各种上传漏洞的靶场。旨在帮助大家对上传漏洞有一个全面的了解。</p>
+            <p><code>weblab</code>是一个使用<code>php</code>语言编写的,专门收集渗透测试和CTF中遇到的各种web漏洞的靶场。旨在帮助大家对web漏洞有一个全面的了解。</p>
         </li>
         <li>
             <h3>注意</h3>
