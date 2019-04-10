@@ -1,6 +1,6 @@
 <?php
 include '../../../config.php';
-include '../../../head.php';
+include '../../../head_sql.php';
 include '../../../menu.php';
 include '../../../sql-connect.php';
 

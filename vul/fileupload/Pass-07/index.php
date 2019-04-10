@@ -1,6 +1,6 @@
 <?php
 include '../../../config.php';
-include '../../../head.php';
+include '../../../head_upload.php';
 include '../../../menu.php';
 
 $is_upload = false;

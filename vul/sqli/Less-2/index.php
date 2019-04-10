@@ -1,7 +1,7 @@
 <?php
 include '../../../config.php';
 include '../../../common.php';
-include '../../../head.php';
+include '../../../head_sql.php';
 include '../../../menu.php';
 
 $is_upload = false;

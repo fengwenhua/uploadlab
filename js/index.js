@@ -49,6 +49,17 @@ function clean_upload_file(){
 	}); 
 }
 
+// 初始化数据库
+function init_database(){
+	$.ajax({  
+		type: 'get',  
+		url: "../rmdir.php?action=clean_upload_file",	
+	}).success(function(data) {
+		Dialog.open(400,200,data);
+	}).error(function() {
+		Dialog.open(400,150,"删除失败！");
+	}); 
+}
 
 function setFooter(){
 	var min_height = window.innerHeight - 175;

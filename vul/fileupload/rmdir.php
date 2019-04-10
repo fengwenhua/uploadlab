@@ -26,7 +26,7 @@ function del_dir($dir){
 		}else{
 			$n_fail++;
 		}
-		return '删除成功：'.$n_success.'，删除失败：'.$n_fail.'！';
+		return '删除成功：'.($n_success-1).'，删除失败：'.$n_fail.'！';
 	}
 }
 
