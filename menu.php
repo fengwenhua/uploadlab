@@ -139,9 +139,9 @@
 				<li><a href="#">Otros dispositivos</a></li>
 			</ul>
 		</li>
-		<li><div class="link"><i class="fa fa-globe"></i>XSS<i class="fa fa-chevron-down"></i></div>
+		<li><div class="link"><i class="fa fa-globe"></i>反射型XSS<i class="fa fa-chevron-down"></i></div>
 			<ul class="submenu">
-				<li><a href="#">Google</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/xss_r/Less-1/index.php">第一关</a></li>
 				<li><a href="#">Bing</a></li>
 				<li><a href="#">Yahoo</a></li>
 				<li><a href="#">Otros buscadores</a></li>
