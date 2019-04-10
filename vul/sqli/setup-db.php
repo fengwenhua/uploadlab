@@ -20,7 +20,7 @@ Welcome&nbsp;&nbsp;&nbsp;
 
 <?php
 //including the Mysql connect parameters.
-include("config.php");
+include("../../config.php");
 
 
 

@@ -53,11 +53,11 @@ function clean_upload_file(){
 function init_database(){
 	$.ajax({  
 		type: 'get',  
-		url: "../rmdir.php?action=clean_upload_file",	
+		url: "../setupdb.php?action=setup_database",	
 	}).success(function(data) {
 		Dialog.open(400,200,data);
 	}).error(function() {
-		Dialog.open(400,150,"删除失败！");
+		Dialog.open(400,150,"初始化失败！");
 	}); 
 }
 

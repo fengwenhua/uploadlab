@@ -32,6 +32,6 @@ function del_dir($dir){
 
 if($_GET['action'] == 'clean_upload_file'){
 	echo del_dir("upload");
-	mkdir("upload");
+	mkdir("upload"); // 删完记得新建一个
 }
 ?>

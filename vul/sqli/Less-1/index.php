@@ -2,7 +2,7 @@
 include '../../../config.php';
 include '../../../head_sql.php';
 include '../../../menu.php';
-include '../../../sql-connect.php';
+include '../sql-connect.php';
 
 // 关闭错误报告
 error_reporting(0);
