@@ -32,7 +32,7 @@ if(isset($_GET['id'])){
 		echo "</font>";  
 	}
 }else { 
-	echo "Please input the ID as parameter with numeric value";
+	echo "Please input the id as parameter with numeric value";
 }
 
 if($_GET['action'] == "show_code"){

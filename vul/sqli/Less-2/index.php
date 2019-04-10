@@ -1,76 +1,50 @@
 <?php
 include '../../../config.php';
-include '../../../common.php';
 include '../../../head_sql.php';
 include '../../../menu.php';
+include '../sql-connect.php';
 
-$is_upload = false;
-$msg = null;
-if (isset($_POST['submit'])) {
-    if (file_exists(UPLOAD_PATH)) {
-        $deny_ext = array(".php",".php5",".php4",".php3",".php2",".html",".htm",".phtml",".pht",".pHp",".pHp5",".pHp4",".pHp3",".pHp2",".Html",".Htm",".pHtml",".jsp",".jspa",".jspx",".jsw",".jsv",".jspf",".jtml",".jSp",".jSpx",".jSpa",".jSw",".jSv",".jSpf",".jHtml",".asp",".aspx",".asa",".asax",".ascx",".ashx",".asmx",".cer",".aSp",".aSpx",".aSa",".aSax",".aScx",".aShx",".aSmx",".cEr",".sWf",".swf",".htaccess");
-        $file_name = trim($_FILES['upload_file']['name']);
-        $file_name = deldot($file_name);//删除文件名末尾的点
-        $file_ext = strrchr($file_name, '.');
-        $file_ext = strtolower($file_ext); //转换为小写
-        $file_ext = trim($file_ext); //首尾去空
-        
-        if (!in_array($file_ext, $deny_ext)) {
-            $temp_file = $_FILES['upload_file']['tmp_name'];
-            $img_path = UPLOAD_PATH.'/'.date("YmdHis").rand(1000,9999).$file_ext;
-            if (move_uploaded_file($temp_file, $img_path)) {
-                $is_upload = true;
-            } else {
-                $msg = '上传出错！';
-            }
-        } else {
-            $msg = '此文件类型不允许上传！';
-        }
-    } else {
-        $msg = UPLOAD_PATH . '文件夹不存在,请手工创建！';
-    }
-}
+// 关闭错误报告
+error_reporting(0);
 ?>
 
 <div id="upload_panel">
-    <ol>
-        <li>
-            <h1>文件上传--第八关</h1>
-        </li>
-        <li>
-            <h3>任务</h3>
-            <p>上传一个<code>webshell</code>到服务器。</p>
-        </li>
-        <li>
-            <h3>上传区</h3>
-            <form enctype="multipart/form-data" method="post" onsubmit="return checkFile()">
-                <p>请选择要上传的图片：<p>
-                <input class="input_file" type="file" name="upload_file"/>
-                <input class="button" type="submit" name="submit" value="上传"/>
-            </form>
-            <div id="msg">
-                <?php 
-                    if($msg != null){
-                        echo "提示：".$msg;
-                    }
-                ?>
-            </div>
-            <div id="img">
-                <?php
-                    if($is_upload){
-                        echo '<img src="'.$img_path.'" width="250px" />';
-                    }
-                ?>
-            </div>
-        </li>
-        <?php 
-            if($_GET['action'] == "show_code"){
-                include 'show_code.php';
-            }
-        ?>
-    </ol>
-</div>
-
 <?php
+if(isset($_GET['id'])){
+	$id=$_GET['id'];
+
+	$sql="SELECT * FROM users WHERE id=$id LIMIT 0,1";
+	$result=mysql_query($sql);
+	$row = mysql_fetch_array($result);
+
+	if($row)
+	{
+	  	echo "<font size='5' color= '#99FF00'>";
+	  	echo 'Your Login name:'. $row['username'];
+	  	echo "<br>";
+	  	echo 'Your Password:' .$row['password'];
+	  	echo "</font>";
+  	}
+	else 
+	{
+		echo '<font color= "#FFFF00">';
+		print_r(mysql_error());
+		echo "</font>";  
+	}
+}else { 
+	echo "Please input the id as parameter with numeric value";
+}
+
+if($_GET['action'] == "show_code"){
+    include 'show_code.php';
+}
+
 include '../../../footer.php';
 ?>
+</div>
+
+
+
+
+
+ 
