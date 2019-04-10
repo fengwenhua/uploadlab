@@ -3,7 +3,7 @@ include '../../../config.php';
 include '../../../head_sql.php';
 include '../../../menu.php';
 include '../sql-connect.php';
-header("Content-Type:text/html;charset=gb2312");
+
 // 关闭错误报告
 error_reporting(0);
 ?>
@@ -13,7 +13,7 @@ error_reporting(0);
 if(isset($_GET['id'])){
 	$id=$_GET['id'];
 
-	$sql="SELECT * FROM users WHERE id='$id' LIMIT 0,1";
+	$sql="SELECT * FROM users WHERE id=$id LIMIT 0,1";
 	$result=mysql_query($sql);
 	$row = mysql_fetch_array($result);
 
