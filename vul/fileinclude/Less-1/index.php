@@ -11,14 +11,19 @@ error_reporting(0);
 <h1>文件包含： 第一关</h1>
 <div id="upload_panel">
 
+
+
 <?php
 
-$file = $_GET[ 'page' ];
+$file = $_GET['page'];
 
-if( isset( $file ) )
+if( isset( $file ) ){
 	include( $file );
-else {
+	
+}else {
+	// 这个重定向有问题
 	header( 'Location:?page=include.php' );
+	echo "fuck!";
 	exit;
 }
 
@@ -33,6 +38,8 @@ if($_GET['action'] == "show_code"){
 }
 include '../../../footer.php';
 ?>
+
+
 </div>
 
 
