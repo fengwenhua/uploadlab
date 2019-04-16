@@ -8,9 +8,6 @@ error_reporting(0);
 ?>
 
 
-
-
-
 <h1>文件包含： 第一关</h1>
 <div id="upload_panel">
 
