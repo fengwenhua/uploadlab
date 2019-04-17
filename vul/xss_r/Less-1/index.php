@@ -1,10 +1,15 @@
 <?php
+$value = "my cookie value";
+// 发送一个简单的 cookie
+setcookie("TestCookie",$value);
+
 include '../../../config.php';
 include '../../../head_normal.php';
 include '../../../menu.php';
 header("Content-type: text/html; charset=utf-8");
 // 关闭错误报告
 error_reporting(0);
+
 ?>
 
 
