@@ -7,7 +7,7 @@ include '../sql-connect.php';
 // 关闭错误报告
 error_reporting(0);
 ?>
-
+<h1>SQL注入： 第四关</h1>
 <div id="upload_panel">
 <?php
 if(isset($_GET['id'])){
