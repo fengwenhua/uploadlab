@@ -8,7 +8,7 @@ error_reporting(0);
 ?>
 
 
-<h1>反射性xss： 第二关</h1>
+<h1>反射性xss： 第三关</h1>
 <div id="upload_panel">
 	<form name="XSS" action="#" method="GET">
 		<p>What's your name?</p>
@@ -21,7 +21,7 @@ error_reporting(0);
 // Is there any input?
 if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
 	// Get input
-	$name = str_replace( '<script>', '', $_GET[ 'name' ] );
+	$name = preg_replace( '/<(.*)s(.*)c(.*)r(.*)i(.*)p(.*)t/i', '', $_GET[ 'name' ] );
 
 	// Feedback for end user
 	$html = "<pre>Hello ${name}</pre>";
@@ -30,10 +30,6 @@ if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
 }
 	
 echo $html;
-
-
-
-
 
 // 显示源码
 if($_GET['action'] == "show_code"){

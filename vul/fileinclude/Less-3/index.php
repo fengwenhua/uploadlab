@@ -8,7 +8,7 @@ error_reporting(0);
 ?>
 
 
-<h1>文件包含： 第一关</h1>
+<h1>文件包含： 第三关</h1>
 <div id="upload_panel">
 
 
@@ -18,6 +18,13 @@ error_reporting(0);
 $file = $_GET['page'];
 
 if( isset( $file ) ){
+	// Input validation
+	if( !fnmatch( "file*", $file )) {
+		// This isn't the page we want!
+		echo "ERROR: File not found!";
+		exit;
+	}
+
 	include( $file );
 	
 }else {

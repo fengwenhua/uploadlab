@@ -8,13 +8,13 @@ include '../sql-connect.php';
 error_reporting(0);
 ?>
 
-<h1>SQL注入： 第二关</h1>
+<h1>SQL注入： 第三关</h1>
 <div id="upload_panel">
 <?php
 if(isset($_GET['id'])){
 	$id=$_GET['id'];
 
-	$sql="SELECT * FROM users WHERE id=$id LIMIT 0,1";
+	$sql="SELECT * FROM users WHERE id=('$id') LIMIT 0,1";
 	$result=mysql_query($sql);
 	$row = mysql_fetch_array($result);
 

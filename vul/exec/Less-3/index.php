@@ -8,7 +8,7 @@ error_reporting(0);
 ?>
 
 
-<h1>命令执行： 第二关</h1>
+<h1>命令执行： 第三关</h1>
 <div id="upload_panel">
 	<h2>Ping for FREE</h2>
 	<p>Enter an IP address below:</p>
@@ -22,12 +22,19 @@ error_reporting(0);
 
 if( isset( $_POST[ 'Submit' ]  ) ) {
 	// Get input
-	$target = $_REQUEST[ 'ip' ];
+	$target = trim($_REQUEST[ 'ip' ]);
 
 	// Set blacklist
 	$substitutions = array(
-		'&&' => '',
+		'&'  => '',
 		';'  => '',
+		'| ' => '',
+		'-'  => '',
+		'$'  => '',
+		'('  => '',
+		')'  => '',
+		'`'  => '',
+		'||' => '',
 	);
 
 	// Remove any of the charactars in the array (blacklist).
@@ -42,6 +49,7 @@ if( isset( $_POST[ 'Submit' ]  ) ) {
 		// *nix
 		$cmd = shell_exec( 'ping  -c 4 ' . $target );
 	}
+
 }
 
 

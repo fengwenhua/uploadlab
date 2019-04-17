@@ -3,12 +3,19 @@
 <pre>
 <code class="line-numbers language-javascript">if( isset( $_POST[ 'Submit' ]  ) ) {
     // Get input
-    $target = $_REQUEST[ 'ip' ];
+    $target = trim($_REQUEST[ 'ip' ]);
 
     // Set blacklist
     $substitutions = array(
-        '&&' => '',
+        '&'  => '',
         ';'  => '',
+        '| ' => '',
+        '-'  => '',
+        '$'  => '',
+        '('  => '',
+        ')'  => '',
+        '`'  => '',
+        '||' => '',
     );
 
     // Remove any of the charactars in the array (blacklist).
@@ -23,6 +30,7 @@
         // *nix
         $cmd = shell_exec( 'ping  -c 4 ' . $target );
     }
+
 }
 </code>
 </pre>

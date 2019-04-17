@@ -3,7 +3,8 @@
 <pre>
 <code class="line-numbers language-javascript">if( array_key_exists( "name", $_GET ) && $_GET[ 'name' ] != NULL ) {
 	// Get input
-	$name = str_replace( '\<script\>', '', $_GET[ 'name' ] );
+	$name = preg_replace( '/<(.*)s(.*)c(.*)r(.*)i(.*)p(.*)t/i', '', $_GET[ 'name' ] );
+
 	// Feedback for end user
 	$html = "<pre>Hello ${name}</pre>";
 }else{

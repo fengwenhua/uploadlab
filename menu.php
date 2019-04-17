@@ -104,8 +104,8 @@
 			<ul class="submenu">
 				<li><a href="<?php echo APP_URL_ROOT;?>/vul/sqli/Less-1/index.php">第一关</a></li>
 				<li><a href="<?php echo APP_URL_ROOT;?>/vul/sqli/Less-2/index.php">第二关</a></li>
-				<li><a href="#">CSS</a></li>
-				<li><a href="#">Maquetacion web</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/sqli/Less-3/index.php">第三关</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/sqli/Less-4/index.php">第四关</a></li>
 			</ul>
 		</li>
 		<li>
@@ -125,35 +125,32 @@
 			<div class="link"><i class="fa fa-mobile"></i>命令执行<i class="fa fa-chevron-down"></i></div>
 			<ul class="submenu">
 				<li><a href="<?php echo APP_URL_ROOT;?>/vul/exec/Less-1/index.php">第一关</a></li>
-				<li><a href="#">第二关</a></li>
-				<li><a href="#">第三关</a></li>
-				<li><a href="#">第四关</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/exec/Less-2/index.php">第二关</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/exec/Less-3/index.php">第三关</a></li>
 			</ul>
 		</li>
 		<li>
 			<div class="link"><i class="fa fa-mobile"></i>文件包含<i class="fa fa-chevron-down"></i></div>
 			<ul class="submenu">
 				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileinclude/Less-1/index.php">第一关</a></li>
-				<li><a href="#">Dispositivos mobiles</a></li>
-				<li><a href="#">Medios de escritorio</a></li>
-				<li><a href="#">Otros dispositivos</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileinclude/Less-2/index.php">第二关</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/fileinclude/Less-3/index.php">第三关</a></li>
 			</ul>
 		</li>
 		<li><div class="link"><i class="fa fa-globe"></i>反射型XSS<i class="fa fa-chevron-down"></i></div>
 			<ul class="submenu">
 				<li><a href="<?php echo APP_URL_ROOT;?>/vul/xss_r/Less-1/index.php">第一关</a></li>
-				<li><a href="#">Bing</a></li>
-				<li><a href="#">Yahoo</a></li>
-				<li><a href="#">Otros buscadores</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/xss_r/Less-2/index.php">第二关</a></li>
+				<li><a href="<?php echo APP_URL_ROOT;?>/vul/xss_r/Less-3/index.php">第三关</a></li>
 			</ul>
 		</li>
-		<li><div class="link"><i class="fa fa-globe"></i>CSRF<i class="fa fa-chevron-down"></i></div>
+<!-- 		<li><div class="link"><i class="fa fa-globe"></i>CSRF<i class="fa fa-chevron-down"></i></div>
 			<ul class="submenu">
-				<li><a href="#">Google</a></li>
-				<li><a href="#">Bing</a></li>
-				<li><a href="#">Yahoo</a></li>
-				<li><a href="#">Otros buscadores</a></li>
+				<li><a href="#">第二关</a></li>
+				<li><a href="#">第二关</a></li>
+				<li><a href="#">第三关</a></li>
+				<li><a href="#">第四关</a></li>
 			</ul>
-		</li>	
+		</li> -->	
 	</ul>
 </div>

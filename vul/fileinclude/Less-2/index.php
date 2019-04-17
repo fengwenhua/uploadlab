@@ -8,7 +8,7 @@ error_reporting(0);
 ?>
 
 
-<h1>文件包含： 第一关</h1>
+<h1>文件包含： 第二关</h1>
 <div id="upload_panel">
 
 
@@ -16,10 +16,11 @@ error_reporting(0);
 <?php
 
 $file = $_GET['page'];
-
 if( isset( $file ) ){
+	// Input validation
+	$file = str_replace( array( "http://", "https://" ), "", $file );
+	$file = str_replace( array( "../", "..\"" ), "", $file );
 	include( $file );
-	
 }else {
 ?>
 	[<em><a href="?page=file1.php">file1.php</a></em>] - [<em><a href="?page=file2.php">file2.php</a></em>] - [<em><a href="?page=file3.php">file3.php</a></em>]
